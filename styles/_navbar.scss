@@ -27,7 +27,6 @@ $hover-color: #fcd253;
       justify-content: flex-end;
    }
    &__link {
-      //   float: right;
       display: block;
       margin-right: 24px;
       font-family: fonts.$interactive-font;
@@ -66,6 +65,8 @@ $hover-color: #fcd253;
 
 @media screen and (max-width: 320px) {
    .nav {
+      &__list:not(:last-child) {
+      }
       &__link {
          display: none;
       }
@@ -73,12 +74,55 @@ $hover-color: #fcd253;
          float: right;
          display: block;
          position: absolute;
-         top: 30px;
+         right: 30px;
+         cursor: pointer;
       }
+   }
+   .nav-container.responsive {
+      height: 40vh;
+      display: flex;
+      position: relative;
+   }
+
+   .nav-container.responsive img {
+      display: none;
+   }
+
+   .nav-container.responsive .fa-solid {
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+
+   .nav-container.responsive .nav {
+      position: absolute;
+      top: 0;
+   }
+
+   .nav-container.responsive .nav__list {
+      display: block;
+   }
+
+   .nav-container.responsive .nav__link {
+      float: none;
+      display: block;
+      text-align: left;
+      color: $link-color;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 1.333rem;
+      &__hover {
+         color: $hover-color;
+      }
+   }
+
+   .nav-container.responsive .nav__icon {
+      position: absolute;
+      top: 30px;
    }
 }
 
 .fa-bars {
-   font-size: 2rem;
+   font-size: 1rem;
    transition-duration: 0.4s;
 }

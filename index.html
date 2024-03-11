@@ -45,22 +45,22 @@
                </a>
                <nav class="nav">
                   <ul class="nav__list">
-                     <li>
+                     <li class="nav__list">
                         <a class="nav__link" href="#Who We Are">Who We Are</a>
                      </li>
-                     <li>
+                     <li class="nav__list">
                         <a class="nav__link" href="#What We Do">What We Do</a>
                      </li>
-                     <li>
+                     <li class="nav__list">
                         <a class="nav__link" href="#Travel With Us"
                            >Travel With Us</a
                         >
                      </li>
-                     <li>
+                     <li class="nav__list">
                         <a class="nav__link" href="#Contact Us">Contact Us</a>
                      </li>
-                     <li>
-                        <a class="nav__icon"
+                     <li class="nav__list">
+                        <a class="nav__icon" onclick="hamburgerMenu()"
                            ><i class="fa-solid fa-bars"></i
                         ></a>
                      </li>
@@ -146,26 +146,38 @@
             </section>
          </main>
          <footer class="footer">
-            <img src="images/logo.png" alt="Bhromaon logo" />
+            <a href="index.html"
+               ><img src="images/logo.png" alt="Bhromaon logo"
+            /></a>
             <p class="footer__text">Safe Travel Anywhere</p>
             <div class="footer__icons">
-               <a class="nav__link" href="#" target="_blank"
+               <a class="footer__link" href="#" target="_blank"
                   ><i class="fa-brands fa-facebook-f"></i
                ></a>
-               <a class="nav__link" href="#" target="_blank"
+               <a class="footer__link" href="#" target="_blank"
                   ><i class="fa-brands fa-x-twitter"></i
                ></a>
-               <a class="nav__link" href="#" target="_blank"
+               <a class="footer__link" href="#" target="_blank"
                   ><i class="fa-brands fa-instagram"></i
                ></a>
-               <a class="nav__link" href="#" target="_blank"
+               <a class="footer__link" href="#" target="_blank"
                   ><i class="fa-brands fa-youtube"></i
                ></a>
-               <a class="nav__link" href="#" target="_blank"
+               <a class="footer__link" href="#" target="_blank"
                   ><i class="fa-brands fa-pinterest"></i
                ></a>
             </div>
          </footer>
       </div>
+      <script>
+         function hamburgerMenu() {
+            let hamburger = document.getElementById("nav-bar");
+            if (hamburger.className === "nav-container") {
+               hamburger.className += " responsive";
+            } else {
+               hamburger.className = "nav-container";
+            }
+         }
+      </script>
    </body>
 </html>

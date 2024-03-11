@@ -1,4 +1,5 @@
 @use "fonts";
+@use "navbar";
 
 .footer {
    width: 100%;
@@ -20,5 +21,11 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 53px;
+   }
+   &__link {
+      color: navbar.$link-color;
+      &:hover {
+         color: navbar.$hover-color;
+      }
    }
 }
