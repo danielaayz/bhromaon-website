@@ -32,9 +32,8 @@
       letter-spacing: 1.4px;
       border: 2px solid #fff;
       cursor: pointer;
-      opacity: 0.6;
       &:hover {
-         opacity: 1;
+         background: #fcd253;
       }
       &:active {
          background: #3b51b3;

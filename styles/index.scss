@@ -15,6 +15,8 @@ body {
 
 .wrapper {
    width: 98vw;
+   height: auto;
+   min-height: 100%;
    margin: 10px auto;
    flex-wrap: wrap;
 }
