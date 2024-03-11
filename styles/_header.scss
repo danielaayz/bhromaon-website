@@ -1,0 +1,16 @@
+@use "fonts";
+
+.header-container {
+   background-image: url(../images/mountain-bg-image.jpg);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   &__heading {
+      font-family: fonts.$header-font;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 54.167%;
+      letter-spacing: 4.8px;
+   }
+}
