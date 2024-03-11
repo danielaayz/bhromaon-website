@@ -50,6 +50,7 @@
    border: none;
    background-color: #5474fd;
    color: #fff;
+   font-weight: 400;
    text-transform: uppercase;
 }
 
@@ -71,3 +72,45 @@
    width: 100%;
    height: 48vh;
 }
+
+.location-container-one {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   padding-bottom: 99px;
+   background-image: url(../images/house-pool-bg-image.jpg);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.location-container-two {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: center;
+   align-items: flex-end;
+   padding-bottom: 99px;
+   background-image: url(../images/cliff-sea-view-bg-image.jpg);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@import "card";
+
+// .third-container {
+//    width: 100%;
+//    height: 100vh;
+//    display: flex;
+//    background-image: url(../images/house-pool-bg-image.jpg);
+//    background-position: top;
+//    background-repeat: no-repeat;
+//    background-size: cover;
+// }
+
+// .firth-container {
+//     background-image: url(../images/cliff-sea-view-bg-image.jpg);
+// }

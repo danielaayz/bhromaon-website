@@ -1,0 +1,26 @@
+@use "fonts";
+
+.card {
+   width: 100%;
+   max-width: 534px;
+   max-height: 374px;
+   padding-bottom: 50px;
+   background-color: rgb(35, 35, 35, 0.9);
+   padding-left: 32px;
+   font-family: fonts.$header-font;
+   font-size: 1.25rem;
+   line-height: 26px; /* 130% */
+   letter-spacing: 1.5px;
+   &__xs-header {
+      color: #e8e8e8;
+      margin: 49px 0 23px 0;
+   }
+   &__small-header {
+      font-family: fonts.$main-font;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+   }
+   &__info {
+      margin-bottom: 46px;
+   }
+}
