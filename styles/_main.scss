@@ -4,6 +4,7 @@
    width: 100%;
    display: flex;
    justify-content: center;
+   align-items: center;
    &__heading {
       font-family: "Aleo", serif;
       font-weight: 400;
@@ -28,10 +29,18 @@
       flex-direction: column;
       justify-content: space-evenly;
    }
+   &__card-right {
+      display: flex;
+      flex-direction: column;
+      img {
+         max-width: 350px;
+         max-height: 220px;
+      }
+   }
 }
 
 .main__text.card-left-text {
-   margin: 50px 0 45px 0;
+   margin: 50px 60px 45px 0;
 }
 
 %button {
@@ -50,4 +59,9 @@
       background-color: navbar.$hover-color;
       transition: all 0.4s ease-in-out;
    }
+}
+
+.img-indentation {
+   margin-top: 10px;
+   margin-left: 90px;
 }

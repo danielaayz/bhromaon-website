@@ -1,0 +1,80 @@
+@use "fonts";
+
+$link-color: #fff;
+$hover-color: #fcd253;
+
+.nav-container {
+   width: 75%;
+   height: 8vh;
+   position: relative;
+   overflow: hidden;
+
+   &__logo {
+      position: absolute;
+      top: 15px;
+      max-width: 186px;
+      max-height: 26px;
+   }
+}
+
+.nav {
+   position: absolute;
+   top: 15px;
+   width: 100%;
+   &__list {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+   }
+   &__link {
+      //   float: right;
+      display: block;
+      margin-right: 24px;
+      font-family: fonts.$interactive-font;
+      letter-spacing: 1.6px;
+      color: $link-color;
+      text-decoration: none;
+      &:hover {
+         color: $hover-color;
+      }
+   }
+   &__icon {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .nav-container {
+      width: 100%;
+      height: 16vh;
+      &__logo {
+         margin-left: 12px;
+      }
+   }
+   .nav {
+      &__link {
+         &:hover {
+            color: $hover-color;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .nav {
+      &__link {
+         display: none;
+      }
+      &__icon {
+         float: right;
+         display: block;
+         position: absolute;
+         top: 30px;
+      }
+   }
+}
+
+.fa-bars {
+   font-size: 2rem;
+   transition-duration: 0.4s;
+}

@@ -4,4 +4,19 @@
    padding: 0;
 }
 
+body {
+   max-width: 1800px;
+   color: #fff;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 162.5%;
+}
+
+.wrapper {
+   width: 99vw;
+   margin: 0 auto;
+   flex-wrap: wrap;
+}
+
 @import "header";
+@import "main";
