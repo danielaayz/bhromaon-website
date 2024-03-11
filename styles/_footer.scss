@@ -1,0 +1,29 @@
+@use "fonts";
+
+footer {
+   width: 100%;
+   height: 38vh;
+   background-color: #232323;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.footer-text {
+   font-family: fonts.$main-font;
+   text-align: center;
+   letter-spacing: 1.6px;
+   margin: 8px 0 17px 0;
+}
+
+.footer_icons {
+   width: 100%;
+   max-width: 166px;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 53px;
+}
+
+.fa-brands {
+}
