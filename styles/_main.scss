@@ -51,8 +51,10 @@
    border: none;
    background-color: #5474fd;
    color: #fff;
+   font-family: fonts.$interactive-font;
    font-weight: 400;
    text-transform: uppercase;
+   cursor: pointer;
 }
 
 .btn {
@@ -133,17 +135,3 @@
    color: #5474fd;
    margin-right: 5px;
 }
-
-// .third-container {
-//    width: 100%;
-//    height: 100vh;
-//    display: flex;
-//    background-image: url(../images/house-pool-bg-image.jpg);
-//    background-position: top;
-//    background-repeat: no-repeat;
-//    background-size: cover;
-// }
-
-// .firth-container {
-//     background-image: url(../images/cliff-sea-view-bg-image.jpg);
-// }
