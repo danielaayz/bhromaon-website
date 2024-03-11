@@ -48,10 +48,14 @@ $hover-color: #fcd253;
       width: 100%;
       height: 16vh;
       &__logo {
+         position: absolute;
+         top: 30px;
          margin-left: 12px;
       }
    }
    .nav {
+      position: absolute;
+      top: 30px;
       &__link {
          &:hover {
             color: $hover-color;
