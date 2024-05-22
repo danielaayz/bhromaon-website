@@ -21,6 +21,49 @@ body {
    flex-wrap: wrap;
 }
 
+@media screen and (max-width: 320px) {
+   .form {
+      width: 80%;
+   }
+
+   .main {
+      &__heading {
+         font-size: 1.5rem;
+      }
+   }
+
+   .first-container {
+      width: 100%;
+      &__card-left {
+         width: 95%;
+      }
+      &__card-right {
+         width: 95%;
+      }
+   }
+
+   .img-indentation {
+      margin-left: 0;
+   }
+
+   .second-container {
+      height: 24vh;
+   }
+
+   .card {
+      &__xs-header {
+         margin-top: 29px;
+      }
+   }
+
+   .testimonial-card {
+      width: 98%;
+      &__right {
+         padding: 10px;
+      }
+   }
+}
+
 @import "header";
 @import "main";
 @import "footer";
