@@ -24,25 +24,28 @@
             <div class="header-container">
                <h1 class="header-container__heading">BHROMAON</h1>
                <p class="header-container__logo-text">Safe Travel Anywhere</p>
-               <form class="form">
-                  <label for="search-bar"></label>
-                  <div class="form__input-container">
+               <!-- START search-bar -->
+               <div class="search-container">
+                  <form class="search-container__form">
+                     <label for="search-bar"></label>
+                     <!-- <div class="form__input-container"> -->
                      <input
                         id="search-bar"
-                        class="form__input"
+                        class="search-container__input"
                         type="text"
                         name="search-bar"
                         placeholder="Search Your Travel Destination..." />
-                     <button class="form__search-btn" type="submit">
-                        <i
-                           class="fa-solid fa-magnifying-glass"
-                           aria-hidden="true"></i>
+                     <button class="search-container__search-btn" type="submit">
+                        Search
+                        <i class="fa-solid fa-magnifying-glass"></i>
                      </button>
-                  </div>
-               </form>
+                     <!-- </div> -->
+                  </form>
+               </div>
                <div class="header-container__scroll-text">
-                  <p>Scroll Down</p>
-                  <i class="fa-solid fa-chevron-down"></i>
+                  <a class="nav__link" href="#nav-bar">
+                     <br />Scroll Down <i class="fa-solid fa-chevron-down"></i
+                  ></a>
                </div>
             </div>
             <!-- Start Nav-Bar -->
