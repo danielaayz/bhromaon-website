@@ -1,8 +1,8 @@
 function hamburgerMenu() {
-   let hamburger = document.getElementById("nav-bar");
-   if (hamburger.className === "nav-container") {
-      hamburger.className += " responsive";
+   let navContainer = document.querySelector(".nav-container");
+   if (navContainer.classList.contains("responsive")) {
+      navContainer.classList.remove("responsive");
    } else {
-      hamburger.className = "nav-container";
+      navContainer.classList.add("responsive");
    }
 }
