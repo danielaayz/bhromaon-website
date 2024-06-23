@@ -132,7 +132,7 @@ $hover-color: #fcd253;
    .nav-container.responsive .nav__link {
       float: none;
       display: block;
-      text-align: left;
+      text-align: center;
       color: $link-color;
       padding: 14px 16px;
       text-decoration: none;
@@ -170,7 +170,7 @@ $hover-color: #fcd253;
       &__link {
          display: block;
          width: 100%;
-         text-align: left;
+         text-align: center;
          padding: 14px 16px;
          margin: 0;
 

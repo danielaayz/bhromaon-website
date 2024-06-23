@@ -65,6 +65,16 @@ header {
       }
       &__scroll-text {
          margin-top: 80px;
+         max-width: 150px;
+      }
+   }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+   .header-container {
+      &__scroll-text {
+         max-width: 150px;
+         width: 100%;
       }
    }
 }
