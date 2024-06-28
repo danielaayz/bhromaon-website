@@ -27,5 +27,8 @@
       &:hover {
          color: navbar.$hover-color;
       }
+      &:active {
+         color: navbar.$hover-color;
+      }
    }
 }
