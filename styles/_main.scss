@@ -146,13 +146,24 @@
 
 @media (min-width: 481px) and (max-width: 1200px) {
    .first-container {
+      height: auto;
+      flex-direction: column;
+
       &__card-left {
-         padding: 30px;
+         padding: 40px;
       }
 
       &__card-right {
          padding: 20px;
       }
+   }
+
+   .testimonial-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: normal;
+      height: auto;
    }
 }
 
